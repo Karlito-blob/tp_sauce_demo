@@ -7,4 +7,3 @@ Feature: 'Se connecter du site saucedemo'
         Given je suis sur la page de connexion du site saucedemo 'https://www.saucedemo.com/'
         When je saisis mon identifiant 'standard_user' et mon mot de passe 'secret_sauce'
         Then je suis connecte sur le site saucedemo
-

@@ -1,7 +1,7 @@
 # IMPORTATION LIBRAIRIES
 import pytest
 from selenium import webdriver
-from Pages.common_page import*
+from pages.common_page import CommonPage
 
 
 def pytest_bdd_step_error(request, feature, scenario, step, step_func, step_func_args, exception):
