@@ -1,14 +1,10 @@
 from .common_page import CommonPage
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.keys import Keys
-
+import time
 
 
 class HomePage(CommonPage):
-   
-    pass
-        
-        
-        
+    
+    def deconnexion(self, locateur1, locateur2):
+        super().click_element(locateur1)
+        time.sleep(2)
+        super().click_element(locateur2)     
