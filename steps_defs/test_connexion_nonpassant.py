@@ -30,5 +30,5 @@ def connexion(prep_page, saisi_username, saisi_password):
 
 @then("je ne suis pas connecté sur le site saucedemo et un message d'erreur s'affiche")
 def erreur_connecte(prep_page):
-    assert prep.page.element_visible(message_error) # Élément indiquant la connexion est bloquée"
+    assert prep_page.element_visible(message_error) # Élément indiquant la connexion est bloquée"
     print("Un message d'erreur s'affiche : Epic sadface: Sorry, this user has been locked out.")
